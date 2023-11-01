@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <time.h>
 #include <stdbool.h>
+#include <stdlib.h>
+
 
 // Check if the file exists
 bool exists(const char * filename) {
