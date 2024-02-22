@@ -21,7 +21,7 @@ int main() {
 
     // Format the date as DDMMYY
     char date[30];
-    strftime(date, sizeof(date), "/home/void/todo/%d%m%y", timeinfo);
+    strftime(date, sizeof(date), "/Users/mattboan/todo/%d%m%y", timeinfo);
 
     // Check if the file exits
     if (!exists(date)) {
@@ -38,9 +38,6 @@ int main() {
 
         // Write the date and ASCII art to the file
         fprintf(file, "%s\n\n", date_str);
-
-        // Write the ASCII art
-        fprintf(file, "██╗░░░██╗░█████╗░██╗██████╗░\n██║░░░██║██╔══██╗██║██╔══██╗\n╚██╗░██╔╝██║░░██║██║██║░░██║\n░╚████╔╝░██║░░██║██║██║░░██║\n░░╚██╔╝░░╚█████╔╝██║██████╔╝\n░░░╚═╝░░░░╚════╝░╚═╝╚═════╝░\n\n");
 
         // Close the file
         fclose(file);
